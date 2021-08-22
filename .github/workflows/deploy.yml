@@ -24,7 +24,7 @@ jobs:
           external_repository: GamestonkTerminal/GamestonkTerminalGuide.github.io
           publish_dir: ./public
           #   keep_files: true
-          user_name: DidierRLopes
+          user_name: GamestonkTerminal
           user_email: dro.lopes@campus.fct.unl.pt
           publish_branch: main
           #   cname: example.com
