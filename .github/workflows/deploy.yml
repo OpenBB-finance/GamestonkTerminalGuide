@@ -7,10 +7,6 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
 
-      - name: Update theme
-        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
-        run: git submodule update --init --recursive
-
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -24,11 +20,11 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.Econiverse_Secret }}
-          external_repository: Econiverse/Econiverse.github.io
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: GamestonkTerminal/GamestonkTerminalGuide.github.io
           publish_dir: ./public
           #   keep_files: true
-          user_name: Econiverse
-          user_email: lunarnautics@protonmail.com
+          user_name: DidierRLopes
+          user_email: dro.lopes@campus.fct.unl.pt
           publish_branch: main
-        #   cname: example.com
+          #   cname: example.com
